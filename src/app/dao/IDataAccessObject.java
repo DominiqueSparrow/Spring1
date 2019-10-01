@@ -5,5 +5,7 @@ import java.util.List;
 public interface IDataAccessObject<T> {
 	
 	List<T> getAll();
+	
+	T getById(String id);
 
 }
