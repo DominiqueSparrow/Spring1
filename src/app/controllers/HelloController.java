@@ -41,6 +41,7 @@ public class HelloController {
 
 	@RequestMapping("/employees")
 	public ModelAndView displayEmployees() {
+		System.out.println("TESTESTEST");
 		return new ModelAndView("employees", "employeeList", employeeDAO.getAll());
 	}
 	
